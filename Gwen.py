@@ -12,7 +12,7 @@ engine = pyttsx3.init('sapi5')
 voices= engine.getProperty('voices')
 engine .setProperty('voice', voices[1].id )
 
-genai.configure(api_key="AIzaSyChHA9jsOPcCZVVyC36X_FiKOWmwpAXCWM")
+genai.configure(api_key="add your api key")
 
 
 def speak(audio):
@@ -28,7 +28,7 @@ def wishMe():
     else:
          speak("Good Evening")  
 
-    speak("I am Karen and how may i help you")   
+    speak("I am gwen and how may i help you")   
     
 def takecommand():
     r = sr.Recognizer()
@@ -98,3 +98,4 @@ if __name__== "__main__":
             print(response.text)
             speak(response.text)
             
+
